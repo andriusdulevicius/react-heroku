@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
+import OneNote from '../oneNote/oneNote';
+import './style.css';
 
-class AppNodeList extends Component {
+class AppNoteList extends Component {
   state = {};
   render() {
-    return <div className='note-list'>NodeList</div>;
+    return (
+      <div className='note-list'>
+        {this.props.notes.map((n) => (
+          <OneNote title={n.title} body={n.body} key={n._id} />
+        ))}
+      </div>
+    );
   }
 }
 
-export default AppNodeList;
+export default AppNoteList;
