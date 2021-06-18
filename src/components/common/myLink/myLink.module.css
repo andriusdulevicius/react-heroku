@@ -1,0 +1,13 @@
+.myLink {
+  display: block;
+  padding: 5px;
+}
+.myLink:hover {
+  background-color: rgba(247, 247, 125, 0.897);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.myLink span {
+  margin: 0.6rem 0.5rem;
+}
