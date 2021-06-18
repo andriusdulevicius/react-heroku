@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AppNodeList from './components/appNoteList/appNoteList';
+import AppNoteList from './components/appNoteList/appNoteList';
 import AppAside from './components/appAside/appAside';
 import AppAddNote from './components/appAddNote/appAddNote';
 import AppNavbar from './components/appNavbar/appNavbar';
@@ -26,7 +26,7 @@ class App extends Component {
 
         <AppAside />
         <AppAddNote onNewNote={this.handleNewNote} />
-        <AppNodeList />
+        <AppNoteList notes={this.state.notes} />
       </div>
     );
   }
