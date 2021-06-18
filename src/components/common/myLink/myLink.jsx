@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import styles from './myLink.module.css';
 class MyLink extends Component {
-  state = {};
+  state = {
+    notes: [],
+  };
   render() {
     return (
       <div className={styles.myLink}>
         <a href={this.props.href}>
           <i className={`fa fa-${this.props.icon}`}></i>
-          <span>{this.props.children}</span>
+          {this.props.children}
         </a>
       </div>
     );

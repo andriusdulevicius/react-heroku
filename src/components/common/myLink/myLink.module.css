@@ -2,13 +2,13 @@
   display: block;
   padding: 5px;
 }
-.myLink:hover,
-.myLink:active {
+.myLink:hover {
   background-color: rgba(247, 247, 125, 0.897);
-  border-radius: 10px;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
   cursor: pointer;
 }
 
-.myLink span {
-  margin: 0.6rem 0.5rem;
+.myLink i {
+  margin: 0 0.5rem;
 }

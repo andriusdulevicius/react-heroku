@@ -1,0 +1,70 @@
+.form-collapsed {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  line-height: 2rem;
+  border: 1px solid rgb(177, 169, 169);
+  box-shadow: 1px 1px 3px rgb(177, 169, 169);
+
+  border-radius: 5px;
+}
+
+.form-collapsed input {
+  border: none;
+}
+
+.form-collapsed textarea {
+  display: none;
+}
+
+.form-expanded {
+  margin: 2rem auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid rgb(177, 169, 169);
+  box-shadow: 1px 1px 3px rgb(177, 169, 169);
+  border-radius: 5px;
+}
+
+.form-expanded input,
+.form-expanded textarea {
+  display: block;
+  border: none;
+  outline: rgb(226, 213, 213);
+  padding: 0.3rem 0;
+  max-width: 80%;
+}
+
+.form-expanded input:focus-visible {
+  outline: none;
+}
+
+.form-expanded .icon-links {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0.4rem auto;
+  color: grey;
+}
+
+.form-collapsed .icon-links a {
+  margin: 0.4rem auto;
+  padding-left: 1rem;
+  color: grey;
+  display: inline-block !important;
+}
+
+.form-expanded button {
+  display: block;
+  align-self: flex-end;
+  border: none;
+  background-color: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-collapsed button {
+  display: none;
+}
