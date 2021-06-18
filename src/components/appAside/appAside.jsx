@@ -6,16 +6,16 @@ class AppAside extends Component {
   render() {
     return (
       <div className='aside'>
-        <MyLink href='/' icon='fa fa-home'>
+        <MyLink active href='/' icon='home'>
           Home
         </MyLink>
-        <MyLink href='/' icon='fa fa-pencil'>
+        <MyLink href='/' icon='pencil'>
           Notes
         </MyLink>
-        <MyLink href='/' icon='fa fa-bell'>
+        <MyLink href='/' icon='bell'>
           Reminders
         </MyLink>
-        <MyLink href='/' icon='fa fa-trash'>
+        <MyLink href='/' icon='trash'>
           Trash
         </MyLink>
       </div>
