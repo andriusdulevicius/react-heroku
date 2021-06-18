@@ -7,7 +7,9 @@ import AppNavbar from './components/appNavbar/appNavbar';
 import './App.css';
 
 class App extends Component {
-  state = {};
+  state = {
+    notes: [],
+  };
   render() {
     return (
       <div className='main-container'>
