@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import styles from './myLink.module.css';
 class MyLink extends Component {
-  state = {};
+  state = {
+    notes: [],
+  };
   render() {
     return (
       <div className={styles.myLink}>
