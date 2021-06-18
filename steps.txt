@@ -1,0 +1,8 @@
+1.clean up 
+2. create appNavbar, appAside, appAddNote, appNodeList components
+
+ 3.importuoti i app.jsx ir pamatyti psl
+ 4.uzsideti visiems komponentams remeli ir su css grid susideti viskas kaip yra keep
+
+ 5. Navbar jsx + css kad atrodytu panasiai jame turim logo nuoroda, ivesties lauka
+ir viena ikona desineje

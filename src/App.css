@@ -1,0 +1,30 @@
+.main-container {
+  display: grid;
+  grid-gap: 10px;
+  width: 100%;
+  grid-template-rows: 50px 100px 150px;
+  grid-template-areas:
+    'nav nav nav nav nav'
+    'aside add-note add-note add-note add-note'
+    'aside note-list note-list note-list note-list';
+}
+
+.main-nav {
+  grid-area: nav;
+  border: 3px solid black;
+}
+
+.add-note {
+  grid-area: add-note;
+  border: 3px solid black;
+}
+
+.note-list {
+  grid-area: note-list;
+  border: 3px solid black;
+}
+
+.aside {
+  grid-area: aside;
+  border: 3px solid black;
+}
