@@ -9,11 +9,15 @@ import './App.css';
 class App extends Component {
   state = {
     notes: [],
+    counter: 1,
   };
 
   handleNewNote = (newNote) => {
-    console.log('adding new note', newNote);
-    this.setState({ notes: this.state.notes.push({ newNote }) });
+    let newObj = { ...newNote, _id: this.state.counter, isPinned: false };
+    const notesCopy = [...this.state.notes];
+    notesCopy.push(newObj);
+
+    this.setState({ notes: notesCopy });
   };
   render() {
     return (

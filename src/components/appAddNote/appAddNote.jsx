@@ -7,11 +7,13 @@ class AppAddNote extends Component {
       title: '',
       body: '',
     },
+    isAddOn: false,
   };
 
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.onNewNote(this.state.newNote);
+    this.setState({ isAddOn: false });
   };
 
   syncInput = (e) => {
@@ -24,7 +26,7 @@ class AppAddNote extends Component {
     return (
       <div className='add-note'>
         <form type='submit' onSubmit={this.handleSubmit}>
-          <div className='form-expanded'>
+          <div className={this.state.isAddOn ? 'form-expanded' : 'form-collapsed'}>
             <input type='text' name='title' placeholder='Title' onChange={this.syncInput} value={newNote.title} />
             <textarea
               value={newNote.body}
