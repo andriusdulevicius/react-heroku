@@ -7,7 +7,7 @@ class MyLink extends Component {
       <div className={styles.myLink}>
         <a href={this.props.href}>
           <i className={`fa fa-${this.props.icon}`}></i>
-          <span>{this.props.children}</span>
+          {this.props.children}
         </a>
       </div>
     );

@@ -9,6 +9,6 @@
   cursor: pointer;
 }
 
-.myLink span {
-  margin: 0.6rem 0.5rem;
+.myLink i {
+  margin: 0 0.5rem;
 }
