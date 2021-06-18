@@ -5,9 +5,9 @@ class AppAside extends Component {
   render() {
     return (
       <div className='aside'>
-        <myLink href='/' icon='fa fa-pencil'>
+        {/* <myLink href='/' icon='fa fa-pencil'>
           Home
-        </myLink>
+        </myLink> */}
       </div>
     );
   }
