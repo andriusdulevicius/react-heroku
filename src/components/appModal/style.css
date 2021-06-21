@@ -1,0 +1,26 @@
+.modal-bgc {
+  background-color: rgba(63, 62, 62, 0.753);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.modal-note {
+  margin: 2rem auto;
+  background-color: white;
+  color: black;
+  min-width: 200px;
+  max-width: 500px;
+  display: block;
+  padding: 1rem;
+  border: 1px solid rgb(177, 169, 169);
+  box-shadow: 1px 1px 3px rgb(177, 169, 169);
+  border-radius: 5px;
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  z-index: 1;
+}

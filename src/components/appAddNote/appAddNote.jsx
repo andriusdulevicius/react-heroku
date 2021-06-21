@@ -22,21 +22,13 @@ class AppAddNote extends Component {
     this.setState({ newNote: { ...this.state.newNote, [e.target.name]: e.target.value } });
   };
 
-  toggleAddNote = () => {};
   render() {
     const { newNote } = this.state;
     return (
       <div className='add-note'>
         <form type='submit' onSubmit={this.handleSubmit}>
           <div className={this.state.isAddOn ? 'form-expanded' : 'form-collapsed'}>
-            <input
-              type='text'
-              name='title'
-              placeholder='Title'
-              onChange={this.syncInput}
-              value={newNote.title}
-              onClick={this.toggleAddNote}
-            />
+            <input type='text' name='title' placeholder='Title' onChange={this.syncInput} value={newNote.title} />
             <textarea
               value={newNote.body}
               onChange={this.syncInput}

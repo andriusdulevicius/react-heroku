@@ -6,7 +6,7 @@ class OneNote extends Component {
   render() {
     const { _id, title, body } = this.props;
     return (
-      <div key={_id} className='one-note'>
+      <div onClick={this.props.toggleModal} key={_id} className='one-note'>
         <h3>{title}</h3>
         <h4>{body}</h4>
       </div>
