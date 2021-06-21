@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import './style.css';
+import Card from '../card/card';
 
 class OneNote extends Component {
   state = {};
   render() {
-    const { _id, title, body } = this.props;
+    const { _id, title, body } = this.props.note;
     return (
-      <div onClick={this.props.toggleModal} key={_id} className='one-note'>
+      <Card onClick={() => this.props.onToggleModal(_id)}>
         <h3>{title}</h3>
-        <h4>{body}</h4>
-      </div>
+        <p>{body}</p>
+      </Card>
     );
   }
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import OneNote from '../oneNote/oneNote';
+import OneNote from '../common/oneNote/oneNote';
+
 import './style.css';
 
 class AppNoteList extends Component {
@@ -8,7 +9,7 @@ class AppNoteList extends Component {
     return (
       <div className='note-list'>
         {this.props.notes.map((n) => (
-          <OneNote toggleModal={this.props.toggleModal} targetedNote={n} title={n.title} body={n.body} key={n._id} />
+          <OneNote onToggleModal={this.props.onToggleModal} note={n} key={n._id} />
         ))}
       </div>
     );
