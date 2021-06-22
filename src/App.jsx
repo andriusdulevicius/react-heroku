@@ -20,6 +20,20 @@ class App extends Component {
     this.setState({ notes: notesCopy, noteId: this.state.noteId + 1 });
   };
 
+  //WARNING! To be deprecated in React v17. Use componentDidUpdate instead.
+  componentDidUpdate(nextProps, nextState) {
+    console.log('did update');
+    //store to local storage
+    localStorage.setItem('notes', JSON.stringify(this.state.notes));
+    localStorage.setItem('lastId', JSON.stringify(this.state.noteId));
+  }
+
+  componentDidMount() {
+    const notesFromStorage = localStorage.getItem('notes');
+    const noteId = +localStorage.getItem('lastId');
+    if (notesFromStorage) this.setState({ notes: JSON.parse(notesFromStorage), noteId });
+  }
+
   createNewNote(newNote) {
     return { _id: this.state.noteId, ...newNote, isPinned: false };
   }

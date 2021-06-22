@@ -30,6 +30,7 @@
 
 .form-expanded input,
 .form-expanded textarea {
+  margin-bottom: 1rem;
   display: block;
   border: none;
   outline: rgb(226, 213, 213);
